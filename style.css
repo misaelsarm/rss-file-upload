@@ -7,6 +7,21 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+body .overlay {
+  background: black;
+  position: absolute;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .navbar {
   padding-left: 20px;
   padding-right: 20px;
@@ -20,6 +35,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .navbar .nav-links {
@@ -44,6 +60,74 @@
 .navbar .nav-links li a {
   text-decoration: none;
   color: black;
+}
+
+.container-files {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-files #cargar {
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: -20px;
+  background: #024b54;
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.container-files #cargar:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+}
+
+.container-files .container {
+  border: none !important;
+}
+
+.container-files .files {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  overflow-x: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.container-files .files a {
+  color: #024b54;
+}
+
+.container-files .files p {
+  margin: 20px;
 }
 
 .container a {
@@ -220,5 +304,56 @@
 
 .contenedor .formulario .datos .form-fields input[type="password"] {
   background-image: url("./assets/locked-padlock-gray.png");
+}
+
+.modal {
+  width: 400px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  padding: 20px;
+  z-index: 199;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+.modal #aceptar,
+.modal #cancelar,
+.modal label {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #024b54;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.modal #cancelar {
+  background: #bd3232 !important;
+}
+
+.modal input[type=file] {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,5 @@
 //logout
-const logOut = document.querySelector('#logOut');
-logOut.addEventListener('click', (e) => {
-    e.preventDefault();
-    auth.signOut();
-    window.location.href = "login"
-})
+
 
 //listen for auth status changes
 auth.onAuthStateChanged(user => {
@@ -15,6 +10,6 @@ auth.onAuthStateChanged(user => {
         welcome.innerHTML = name
     } else {
         console.log(user);
-        window.location.href = "login"
+        window.location.href = "login.html"
     }
 })
