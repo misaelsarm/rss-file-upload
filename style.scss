@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+* {
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    //padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #95c6cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-links {
+        display: flex;
+        li {
+            padding: 20px;
+            list-style: none;
+            border-radius: 10px;
+            transition: 0.5s all ease;
+            margin: 5px;
+            &:hover {
+                background: #024a544f;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.container {
+    a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: #024b54;
+    }
+    .departamentos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .departamento {
+            border: 1px solid rgba(0, 0, 0, 0.247);
+            height: 100px;
+            width: 400px;
+            margin: 20px;
+            transition: all 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+            }
+        }
+    }
+}
+
+.contenedor {
+    height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background: #95c6cc;
+    display: flex;
+    justify-content: center;
+    .img {
+        img {
+            transform: translate(70px);
+        }
+        width: 50%;
+        background: #95c6cc;
+    }
+    .formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 50%;
+        background: white;
+        .datos {
+            border: 1px solid rgba(0, 0, 0, 0.24);
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            border-radius: 10px;
+            .header {
+                font-family: "Rubik", sans-serif;
+                background: #024b54;
+                border-radius: 10px 10px 0 0;
+                height: 100px;
+                padding: 20px;
+                font-size: 23px;
+                color: white;
+                h2 {
+                    font-weight: 500;
+                }
+            }
+            .form-fields {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                .btn-submit {
+                    background: #024b54;
+                    padding: 10px;
+                    width: 150px;
+                    margin-top: 20px;
+                    font-family: "Rubik", sans-serif;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    transition: all 0.2s ease;
+                    //  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+                    }
+                }
+                .fields {
+                    border-radius: 10px;
+                    background: rgba(128, 128, 128, 0.144);
+                    margin: 20px;
+                    display: block;
+                    border: none;
+                }
+                input[type="text"],
+                input[type="password"] {
+                    font-family: "Rubik", sans-serif;
+                    outline: none;
+                    width: 85%;
+                    color: black;
+                    transition: all 0.5s ease;
+                    background-size: 25px;
+                    background-repeat: no-repeat;
+                    background-position: 6px 8px;
+                    padding: 12px 20px 12px 40px;
+                    &:hover {
+                        background-color: rgba(128, 128, 128, 0.212);
+                    }
+                }
+                input[type="text"] {
+                    background-image: url("../assets/user-gray.png");
+                }
+                input[type="password"] {
+                    background-image: url("../assets/locked-padlock-gray.png");
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #95c6cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  padding: 20px;
+  list-style: none;
+  border-radius: 10px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  margin: 5px;
+}
+
+.navbar .nav-links li:hover {
+  background: #024a544f;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #024b54;
+}
+
+.container .departamentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .departamentos .departamento {
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  height: 100px;
+  width: 400px;
+  margin: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .departamentos .departamento:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+}
+
+.contenedor {
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background: #95c6cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor .img {
+  width: 50%;
+  background: #95c6cc;
+}
+
+.contenedor .img img {
+  -webkit-transform: translate(70px);
+          transform: translate(70px);
+}
+
+.contenedor .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 50%;
+  background: white;
+}
+
+.contenedor .formulario .datos {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.contenedor .formulario .datos .header {
+  font-family: "Rubik", sans-serif;
+  background: #024b54;
+  border-radius: 10px 10px 0 0;
+  height: 100px;
+  padding: 20px;
+  font-size: 23px;
+  color: white;
+}
+
+.contenedor .formulario .datos .header h2 {
+  font-weight: 500;
+}
+
+.contenedor .formulario .datos .form-fields {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedor .formulario .datos .form-fields .btn-submit {
+  background: #024b54;
+  padding: 10px;
+  width: 150px;
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.contenedor .formulario .datos .form-fields .btn-submit:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor .formulario .datos .form-fields .fields {
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.144);
+  margin: 20px;
+  display: block;
+  border: none;
+}
+
+.contenedor .formulario .datos .form-fields input[type="text"],
+.contenedor .formulario .datos .form-fields input[type="password"] {
+  font-family: "Rubik", sans-serif;
+  outline: none;
+  width: 85%;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 6px 8px;
+  padding: 12px 20px 12px 40px;
+}
+
+.contenedor .formulario .datos .form-fields input[type="text"]:hover,
+.contenedor .formulario .datos .form-fields input[type="password"]:hover {
+  background-color: rgba(128, 128, 128, 0.212);
+}
+
+.contenedor .formulario .datos .form-fields input[type="text"] {
+  background-image: url("../assets/user-gray.png");
+}
+
+.contenedor .formulario .datos .form-fields input[type="password"] {
+  background-image: url("../assets/locked-padlock-gray.png");
+}
+/*# sourceMappingURL=style.css.map */

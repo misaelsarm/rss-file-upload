@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="img">
+            <img src="./assets/RSS.png" width="75%" alt />
+        </div>
+        <div class="formulario">
+            <div class="datos">
+                <form id="login-form">
+                    <div class="header">
+                        <h2>Iniciar sesión</h2>
+                    </div>
+                    <div class="form-fields">
+                        <input required class="fields" id="login-email" placeholder="Usuario" type="text" />
+                        <input required class="fields" id="login-password" placeholder="Contraseña" type="password" />
+                        <button class="btn-submit" type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCTfygsOBlt7knFLHRuYrENcmX9Wv6dQOk",
+            authDomain: "rssorting.firebaseapp.com",
+            databaseURL: "https://rssorting.firebaseio.com",
+            projectId: "rssorting",
+            storageBucket: "rssorting.appspot.com",
+            messagingSenderId: "125049366627",
+            appId: "1:125049366627:web:3d42de5298cd48906f7056",
+            measurementId: "G-H6DE83E1B5"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>

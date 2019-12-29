@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img width="80" src="./assets/RSS.png" alt="" /></a>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li id="welcome"></li>
+            <li><a id="logOut" href="">Cerrar sesion</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Departamentos</h2>
+        <div class="departamentos">
+            <a href="compras">
+                <div class="departamento">
+                    <h2>
+                        Compras
+                    </h2>
+                </div>
+            </a>
+            <a href="calidad.html">
+                <div class="departamento">
+                    <h2>
+                        Calidad
+                    </h2>
+                </div>
+            </a>
+            <a href="auditoria-interna.html">
+                <div class="departamento">
+                    <h2>
+                        Auditoria Interna
+                    </h2>
+                </div>
+            </a>
+            <a href="proyectos.html">
+                <div class="departamento">
+                    <h2>
+                        Proyectos
+                    </h2>
+                </div>
+            </a>
+            <a href="RH.html">
+                <div class="departamento">
+                    <h2>
+                        Recursos Humanos
+                    </h2>
+                </div>
+            </a>
+            <a href="sistemas.html">
+                <div class="departamento">
+                    <h2>
+                        Sistemas
+                    </h2>
+                </div>
+            </a>
+            <a href="sgc.html">
+                <div class="departamento">
+                    <h2>
+                        SGC
+                    </h2>
+                </div>
+            </a>
+            <a href="alta-direccion.html">
+                <div class="departamento">
+                    <h2>
+                        Alta dirección
+                    </h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCTfygsOBlt7knFLHRuYrENcmX9Wv6dQOk",
+            authDomain: "rssorting.firebaseapp.com",
+            databaseURL: "https://rssorting.firebaseio.com",
+            projectId: "rssorting",
+            storageBucket: "rssorting.appspot.com",
+            messagingSenderId: "125049366627",
+            appId: "1:125049366627:web:3d42de5298cd48906f7056",
+            measurementId: "G-H6DE83E1B5"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
