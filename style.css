@@ -215,10 +215,10 @@
 }
 
 .contenedor .formulario .datos .form-fields input[type="text"] {
-  background-image: url("../assets/user-gray.png");
+  background-image: url("./assets/user-gray.png");
 }
 
 .contenedor .formulario .datos .form-fields input[type="password"] {
-  background-image: url("../assets/locked-padlock-gray.png");
+  background-image: url("./assets/locked-padlock-gray.png");
 }
 /*# sourceMappingURL=style.css.map */
