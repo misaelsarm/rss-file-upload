@@ -1,6 +1,6 @@
 auth.onAuthStateChanged(user => {
     if (user) {
-        console.log(user.email);
+        console.log(user.uid);
         const welcome = document.querySelector('#welcome')
         const name = `Bienvenido <b>${user.email}</b>`
         welcome.innerHTML = name

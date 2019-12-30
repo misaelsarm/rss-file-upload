@@ -85,7 +85,7 @@ body {
         width: 60vw;
         display: flex;
         justify-content: space-between;
-        // flex-direction: column;
+        //flex-direction: column;
         flex-wrap: wrap;
         margin-top: 30px;
         overflow-x: hidden;
@@ -94,8 +94,34 @@ body {
         0,
         0,
         0.288);
-        a {
+        .descargar {
+            display: block;
+            width: 150px;
+            text-align: center;
             color: rgb(2, 108, 230);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            background: rgba(2, 108, 230, 0.185);
+            transition: all 0.3s ease;
+            &:hover {
+                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+            }
+        }
+        .eliminar {
+            color: rgb(255, 61, 61);
+            width: 150px;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 61, 61, 0.329);
+            transition: all 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+            }
         }
         p {
             margin: 10px;

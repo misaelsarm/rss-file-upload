@@ -122,8 +122,41 @@ body .overlay {
   margin: 30px;
 }
 
-.container-files .files a {
+.container-files .files .descargar {
+  display: block;
+  width: 150px;
+  text-align: center;
   color: #026ce6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  background: rgba(2, 108, 230, 0.185);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container-files .files .descargar:hover {
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+}
+
+.container-files .files .eliminar {
+  color: #ff3d3d;
+  width: 150px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 61, 61, 0.329);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container-files .files .eliminar:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.329);
 }
 
 .container-files .files p {
