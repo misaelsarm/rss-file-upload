@@ -48,7 +48,8 @@ body {
 }
 
 .container-files {
-    height: auto;
+    // height: auto;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,18 +79,14 @@ body {
         border: none !important;
     }
     .files {
-        a {
-            color: #024b54;
+        .icon {
+            margin: 30px;
         }
-        p {
-            margin: 20px;
-        }
-        width: 90vw;
+        width: 60vw;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
+        // flex-direction: column;
         flex-wrap: wrap;
-        // margin: 20px;
         margin-top: 30px;
         overflow-x: hidden;
         ;
@@ -97,6 +94,12 @@ body {
         0,
         0,
         0.288);
+        a {
+            color: rgb(2, 108, 230);
+        }
+        p {
+            margin: 10px;
+        }
     }
 }
 
@@ -260,5 +263,25 @@ body {
     }
     input[type=file] {
         display: none;
+    }
+}
+
+.loading {
+    top: 200px;
+    width: 400px;
+    transition: 0.3s all ease;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    padding: 20px;
+    z-index: 199;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //transform: scale(0, 0);
+    display: none;
+    h2 {
+        margin: 10px;
     }
 }

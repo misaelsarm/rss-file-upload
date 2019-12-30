@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/cca8aa3167.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recursos Humanos</title>
+</head>
+
+<body>
+    <div id="overlay" class="overlay">
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img width="80" src="./assets/RSS.png" alt="" /></a>
+        </div>
+        <ul id="nav-links" class="nav-links">
+            <li id="welcome"></li>
+            <li><a id="logOut" href="">Cerrar sesion</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-files">
+        <div id="modal" class="modal">
+            <input id="fileButton" type="file">
+            <label for="fileButton">Elegir archivo y cargar</label>
+            <!--  <button id="aceptar">Cargar</button> -->
+            <button id="cancelar">Cancelar</button>
+        </div>
+        <div style="" id="loading" class="loading">
+            <h2>Cargando archivo...</h2>
+            <i class="fas fa-circle-notch fa-2x fa-spin "></i>
+        </div>
+        <button id="cargar">Cargar nuevo archivo</button>
+        <div class="files container">
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCTfygsOBlt7knFLHRuYrENcmX9Wv6dQOk",
+            authDomain: "rssorting.firebaseapp.com",
+            databaseURL: "https://rssorting.firebaseio.com",
+            projectId: "rssorting",
+            storageBucket: "rssorting.appspot.com",
+            messagingSenderId: "125049366627",
+            appId: "1:125049366627:web:3d42de5298cd48906f7056",
+            measurementId: "G-H6DE83E1B5"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+    <script src="RH.js"></script>
+    <script src="auth.js"></script>
+    <script src="logout.js"></script>
+
+</body>
+
+</html>
