@@ -80,15 +80,6 @@ function render() {
     })
 }
 
-/* const deleteIcon = document.querySelector('#deleteFile');
-console.log(deleteIcon);
-
-function deleteFile() {
-    deleteIcon.addEventListener('click', () => {
-        console.log("Deleted");
-    })
-} */
-
 function showDepartments() {
     compras = document.getElementById("compras")
 }

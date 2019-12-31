@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/cca8aa3167.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>SGC</title>
+    <title>sgc</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <div class="container-files">
+    <div id="sgc" class="container-files">
         <div id="modal" class="modal">
             <input id="fileButton" type="file">
             <label for="fileButton">Elegir archivo y cargar</label>
@@ -35,7 +35,8 @@
             <i class="fas fa-circle-notch fa-2x fa-spin "></i>
         </div>
         <button id="cargar">Cargar nuevo archivo</button>
-        <div class="files container">
+        <div id="fileList" class="fileList container">
+
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
