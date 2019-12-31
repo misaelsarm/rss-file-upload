@@ -1,6 +1,6 @@
 auth.onAuthStateChanged(user => {
     if (user) {
-        if (user.email === "test@rssorting.com") {
+        if (user.email === "lesly.cruz@rssorting.com") {
             console.log("true");
         }
 
