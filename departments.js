@@ -9,7 +9,7 @@ auth.onAuthStateChanged(user => {
         if (user.email === "jessica.s@rssorting.com") {
             auditoria();
         }
-        if (user.email === "proyectos@rssorting.com") {
+        if (user.email === "emilio@rssorting.com") {
             proyectos();
         }
         if (user.email === "fany@rssorting.com") {
